@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulaire</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="get" action="ServletTraitement">
+        <p>Entrez votre nom : <input type="text" name="nom"></p>
+        <p>Entrez votre prénom : <input type="text" name="prenom"></p>
+        <p><INPUT type="radio" name="sexe" value="H" checked>Homme</p>
+        <p><INPUT type="radio" name="sexe" value="F">Femme</p>
+        <select name="fonction">
+        <option value="Etudiant">Etudiant</option>
+        <option value="Ingenieur">Ingenieur</option>
+        <option value="Enseignant">Enseignant</option>
+        <option value="Retraite">Retraité</option>
+        <option value="Autre">Autre</option>
+
+        </select>
+        <br><br>
+        <fieldset>
+  <legend>Veuillez sélectionner vos loisirs :</legend>
+  <div>
+    <input type="checkbox" id="coding" name="interest" value="Developpement">
+    <label for="coding">Développement</label>
+  </div>
+  <div>
+    <input type="checkbox" id="music" name="interest" value="Musique">
+    <label for="music">Musique</label>
+  </div>
+    <div>
+    <input type="checkbox" id="lecture" name="interest" value="Lecture">
+    <label for="reading">Lecture</label>
+  </div>
+</fieldset>
+	<input type="submit" value="Envoyer" />
+    </form>
+
+
+    </body>
+</html>
